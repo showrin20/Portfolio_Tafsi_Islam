@@ -26,30 +26,64 @@
   </head>
 
   <style>
-    body {
-      font-family: "Arial", sans-serif;
+      body {
+        font-family: "Arial", sans-serif;
+      }
+
+      .banner {
+        color: black;
+        padding: 50px;
+        text-align: left;
+      }
+
+      .tagline {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .image-container {
+        text-align: right;
+      }
+
+      .profile-image {
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+      }
+
+
+    .section {
+      margin-top: 50px;
     }
 
-    .banner {
-      color: black;
-      padding: 50px;
-      text-align: left;
+    .qualification,
+    .progress-bars {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      
     }
 
-    .tagline {
-      font-size: 14px;
-      margin-bottom: 20px;
+    .progress-bar {
+      height: 20px;
+      background-color: #ddd;
+      border-radius: 10px;
+      margin: 24px;
     }
 
-    .image-container {
-      text-align: right;
+    .progress-fill {
+      height: 100%;
+      border-radius: 8px;
+      background-color: #4caf50; /* Green color */
+    }
+    .progress-label {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    .profile-image {
-      width: 200px;
-      height: auto;
-      border-radius: 50%;
-    }
   </style>
 
   <body>
@@ -84,7 +118,9 @@
               <a class="nav-link" href="team.html">Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Achivements.html">Achievements</a>
+              <a class="nav-link" href="Achivements.html"
+                >Extra Curricular Activities
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -115,31 +151,131 @@
       </div>
     </nav>
 
-    <div class="container-fluid m-5" id="#About">
-      <div class="row">
-        <div class="col-md-6 banner">
+    <div class="container-fluid m-20" id="#About">
+      <div class="row" style="margin:30px;">
+        <div class="col-md-6  banner">
           <h4 style="font-size: 2.5em; font-weight: bold; margin-bottom: 10px">
-            Bilingual, Enthusiastic
+            Bilingual, Enthusiastic<br />
             <span style="color: #ffd700">Finance Professional</span>
           </h4>
           <p style="font-size: 12px; line-height: 1.5 margin: 3px;">
             Enthusiastic and resilient finance postgraduate with analytical
             skills.<br />
-            Excellent team player and leader.<br />
             Proficient in Excel, Stata, and RStudio.<br />
-            Seeking a dynamic and challenging environment.
+            Excellent team player and leader.<br />
           </p>
         </div>
-        <div class="col-md-6">
-          <img src="portfolio.png" alt="Profile Image" />
+        <div class="col-md-6 m-20">
+          <img src="portfolio1.jpeg" alt="Profile Image" />
         </div>
       </div>
     </div>
 
-    <!-- Bootstrap JS and dependencies (Popper.js and Bootstrap 5 JS) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <section class="container">
+      <!-- Academic Qualifications -->
+      <div class="row section">
+        <div class="col-md-6">
+          <h6 style="font-size: 2.5em; font-weight: bold; margin: 20px">
+            Academic Qualifications</h6>
+          <div class="qualification">
+            <strong>The University of Nottingham, Nottingham, UK</strong>
+            <p>Sep, 2021 - Dec, 2022</p>
+            <p><strong>MSc Finance and Investment</strong></p>
+            <ul>
+              <li>Graduated with Distinction (First-Class).</li>
+              <li>
+                Awarded Dean’s Scholarship for Outstanding Academic Excellence.
+              </li>
+              <li>
+                Modules Completed: Corporate Finance, Capital Market Analysis,
+                Quantitative Research Methods, Derivative Investment, Fixed
+                Interest Investment, Computational Finance, and Venture Capital
+                & Private Equity.
+              </li>
+            </ul>
+
+              <strong>
+              BRAC University, Dhaka, Bangladesh</strong>
+            <p>Jan, 2015 - Nov, 2019</p>
+            <p>
+              <strong
+                >Bachelor of Business Administration</strong><br> CGPA: 3.72/4.00
+              
+            </p>
+            <ul>
+              <li>Graduated with High Distinction.</li>
+              <li>
+                Completed a double major in Finance and Supply Chain Management.
+              </li>
+              <li>Achieved 4 Academic Honours and Merit-Based Scholarship.</li>
+            </ul>
+
+            <strong>Viqarunnisa Noon School and College, Dhaka, Bangladesh</strong>
+            <p>
+           <ul>
+             <li> Higher Secondary Certificate (H.S.C), Group: Science,<br> GPA:
+                5.00/5.00</li>
+              
+            </p>
+            <p>
+              
+                <li>Secondary School Certificate (S.S.C), Group: Science,<br> GPA:
+                5.00/5.00</li>
+              </ul>
+        
+            </p>
+          </div>
+        </div>
+
+        <!-- Progress Bars -->
+        <div class="col-md-6">
+          <h6 style="font-size: 2.5em; font-weight: bold; margin: 20px; color:#ffd700">
+            Skills</h6>
+  
+          <!-- Progress Bars -->
+          <div class="progress-bars">
+            <!-- Progress Label -->
+            <p class="progress-label">Skill 1</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 40%"></div>
+            </div>
+  
+            <!-- Progress Label -->
+            <p class="progress-label">Skill 2</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 70%"></div>
+            </div>
+  
+            <!-- Progress Label -->
+            <p class="progress-label">Skill 3</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+  
+            <!-- Progress Label -->
+            <p class="progress-label">Skill 4</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+  
+            <!-- Progress Label -->
+            <p class="progress-label">Skill 5</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+            <p class="progress-label">Skill 6</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+            <p class="progress-label">Skill 7</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+          
+
+            </div>
+      </div>
+    </section>
 
     <!-- Bootstrap JS and dependencies (Popper.js and jQuery) -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
