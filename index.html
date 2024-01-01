@@ -84,6 +84,112 @@
       margin-bottom: 10px;
     }
 
+
+    .my-timeline {
+      position: relative;
+      max-width: 3500px;
+  }
+  
+  .my-container {
+      padding: 20px 50px;
+      position: relative;
+      width: 40%;
+      opacity: 1;
+  }
+  
+
+  .text-box {
+      padding: 20px 30px;
+      position: relative;
+      font-size: 16px;
+      color: #1f1f1f;
+      font-weight: 400;
+      background-color: white;
+      border: 2px solid #0FA99F;
+      filter: drop-shadow(0px 0px 20px rgba(190, 190, 190, 0.25));
+      border-radius: 6px;
+  }
+  
+  .left-container {
+      left: 0;
+  }
+  
+  .right-container {
+      left: 50%;
+  }
+  
+  
+  
+  .my-container h5 {
+      position: absolute;
+      color: #000;
+      text-align: center;
+      font-family: "Lato";
+      font-size: 21px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      right: -162px;
+      top: 56px;
+  }
+  
+  .right-container h5 {
+      left: -995px;
+  }
+  
+  .timeline-line {
+    position: absolute;
+    width: 4px;
+    background-color: #0FA99F;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    z-index: 1;
+    height: 0;
+    transition: height 0.5s ease;
+}
+
+
+.my-timeline::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background-color: #A3A3A3;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    z-index: -1;
+    height: 100%;
+}
+
+  
+  @media screen and (max-width: 600px) {
+      .my-timeline {
+          margin: 50px auto;
+      }
+  
+      .my-timeline::after {
+          left: 40px;
+      }
+  
+      .my-container {
+          width: 100%;
+          padding-left: 80px;
+          padding-right: 25px;
+      }
+  
+      .text-box {
+          font-size: 14px;
+      }
+  
+      .right-container {
+          left: 0;
+      }
+  
+  }
+
+  
+
   </style>
 
   <body>
@@ -112,7 +218,7 @@
               <a class="nav-link" href="#About">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="project.html">Education</a>
+              <a class="nav-link" href="#education">Education</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="team.html">Experience</a>
@@ -151,14 +257,14 @@
       </div>
     </nav>
 
-    <div class="container-fluid m-20" id="#About">
+    <div class="container-fluid m-20" id="About">
       <div class="row" style="margin:30px;">
         <div class="col-md-6  banner">
           <h4 style="font-size: 2.5em; font-weight: bold; margin-bottom: 10px">
             Bilingual, Enthusiastic<br />
-            <span style="color: #ffd700">Finance Professional</span>
+            <span style="color: #ffd700;">Finance Professional</span>
           </h4>
-          <p style="font-size: 12px; line-height: 1.5 margin: 3px;">
+          <p style="font-size: 12px; line-height: 1.5; margin: 3px;">
             Enthusiastic and resilient finance postgraduate with analytical
             skills.<br />
             Proficient in Excel, Stata, and RStudio.<br />
@@ -171,7 +277,8 @@
       </div>
     </div>
 
-    <section class="container">
+    <section id="education">
+    <div class="container" >
       <!-- Academic Qualifications -->
       <div class="row section">
         <div class="col-md-6">
@@ -275,7 +382,117 @@
 
             </div>
       </div>
+  
+  </section>
+
+
+    <section id="work" >
+
+  
+      <!-- Work experience title -->
+      <div class="timeline-title" >
+       
+
+        <h6 style="font-size: 2.5em; font-weight: bold; color:black; margin: 70px;">
+          Work Experience</h6>
+        </div>
+  </div>
+
+      <div class="my-timeline">
+
+        <div class="my-container left-container">
+         
+          <div class="text-box">
+            <div style="margin-bottom: 40px;">
+              <h6 style="font-size: 1.5em; font-weight: bold; margin-bottom: 10px;">Decision Maker Panel Associate</h6>
+              <p class="date" style="font-weight: bold;">May, 2022 – Present</p>
+              <p class="location" style="font-style: italic; color: #555;">The Bank of England-Nottingham-Stanford-Decision Maker Panel, Nottingham, UK</p>
+          
+              <div class="job-description" style="margin-top: 10px;">
+                  <p style="margin: 0; line-height: 1.5;">As a Decision Maker Panel Associate, my responsibilities include:</p>
+                  <ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
+                      <li>Communicating and liaising directly with Managing and Finance Directors of numerous businesses across the UK in order to recruit them to the Decision Maker Panel.</li>
+                      <li>Assisting in the collection of data for the Monetary Policy Committee of the Bank of England to assess the economic prospects of the UK businesses following Brexit, Covid-19, and inflation, which helps them to set interest rates.</li>
+                  </ul>
+              </div>
+          </div>
+          
+          </div>
+        </div>
+        <div class="my-container right-container">
+          <div class="text-box">
+            <div style="margin-bottom: 40px;">
+              <h4 style="font-size: 1.5em; font-weight: bold; margin-bottom: 10px;">Marketing & Business Analyst (Part time role)</h4>
+              <p class="date" style="font-weight: bold;">Jan, 2022 – Mar, 2022</p>
+              <p class="location" style="font-style: italic; color: #555;">Imosphere, Nottingham, UK</p>
+          
+              <div class="job-description" style="margin-top: 10px;">
+                  <p style="margin: 0; line-height: 1.5;">As a Marketing & Business Analyst in a part-time role at Imosphere, my responsibilities included:</p>
+                  <ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
+                      <li>Reviewed capabilities of an upcoming analytics cloud platform developed by Imosphere.</li>
+                      <li>Assisted managers with different pricing and positioning strategies.</li>
+                      <li>Identified and conducted research on new market sectors.</li>
+                  </ul>
+              </div>
+          </div>
+          
+          </div>
+        </div>
+        <div class="my-container left-container">
+          <div class="text-box">
+            <div style="margin-bottom: 40px;">
+              <h4 style="font-size: 1.5em; font-weight: bold; margin-bottom: 10px;">Operations Associate</h4>
+              <p class="date" style="font-weight: bold;">Nov, 2020 – Sep, 2021</p>
+              <p class="location" style="font-style: italic; color: #555;">MetLife Bangladesh, Dhaka, Bangladesh</p>
+          
+              <div class="job-description" style="margin-top: 10px;">
+                  <p style="margin: 0; line-height: 1.5;">As an Operations Associate at MetLife Bangladesh, my responsibilities included:</p>
+                  <ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
+                      <li>Accurately analyzed data using MS Excel to process monthly commission payments for agents.</li>
+                      <li>Demonstrated attention to detail by generating monthly automatic premium loan interest reports in MS Excel after aggregating data from the company’s server.</li>
+                      <li>Assisted to prepare quarterly Tax Deducted at Source reports in MS Excel which resulted in positive feedback from the Head of the Department and Senior Manager.</li>
+                      <li>Maintained internal databases and record systems efficiently.</li>
+                      <li>Assisted manager with one of the ongoing projects by providing analytical insights and company reports to tight deadlines.</li>
+                  </ul>
+              </div>
+          </div>
+          
+          </div>
+        </div>
+        <div class="my-container right-container">
+          <div class="text-box">
+            <div style="margin-bottom: 40px;">
+              <h4 style="font-size: 1.5em; font-weight: bold; margin-bottom: 10px;">Discretionary Portfolio Management Intern</h4>
+              <p class="date" style="font-weight: bold;">May, 2019 – Aug, 2019</p>
+              <p class="location" style="font-style: italic; color: #555;">IDLC Investments Limited, Dhaka, Bangladesh</p>
+          
+              <div class="job-description" style="margin-top: 10px;">
+                  <p style="margin: 0; line-height: 1.5;">As a Discretionary Portfolio Management Intern at IDLC Investments Limited, my responsibilities included:</p>
+                  <ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
+                      <li>Assisted manager with account opening and closing procedures.</li>
+                      <li>Provided excellent customer service to clients to resolve their problems and answered their queries about investment schemes and portfolios.</li>
+                      <li>Worked flexibly with the Accounts department to initiate cheques collection procedures maintaining accuracy and safety.</li>
+                  </ul>
+              </div>
+          </div>
+          
+          </div>
+        </div>
+
+        </div>
+
+        </div>
+
+        <div class="timeline-line"></div>
+      </div>
+
     </section>
+
+
+
+
+
+
 
     <!-- Bootstrap JS and dependencies (Popper.js and jQuery) -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
